@@ -7,11 +7,11 @@ SELECT unidade AS "Fatec", COUNT(*) AS "Quantidade" FROM tbcurso GROUP BY unidad
 
 
 --ex3
-SELECT unidade AS "Fatec", COUNT(*) AS "Quantidade"FROM tbcurso GROUP BY unidade ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT unidade AS "Fatec", COUNT(*) AS "Quantidade" FROM tbcurso GROUP BY unidade ORDER BY COUNT(*) DESC LIMIT 1;
 
 
 --ex4
-SELECT unidade AS "Fatec", COUNT(*) AS "Quantidade"FROM tbcurso GROUP BY unidade ORDER BY COUNT(*) DESC LIMIT 1 OFFSET 1;
+SELECT unidade AS "Fatec", COUNT(*) AS "Quantidade" FROM tbcurso GROUP BY unidade ORDER BY COUNT(*) DESC LIMIT 1 OFFSET 1;
 
 
 --ex5
@@ -27,11 +27,11 @@ SELECT unidade AS "Fatec", turno, COUNT(*) AS "Quantidade" FROM tbcurso GROUP BY
 
 
 --ex8
-SELECT unidade AS "Fatec", turno, COUNT(*) AS "Quantidade" FROM tbcurso WHERE unidade LIKE "%São José dos Campos%" GROUP BY unidade, turno ORDER BY unidade, turno ASC;
+SELECT unidade AS "Fatec", turno, COUNT(*) AS "Quantidade" FROM tbcurso WHERE unidade LIKE '%São José dos Campos%' GROUP BY unidade, turno ORDER BY unidade, turno ASC;
 
 
 --ex9
-SELECT unidade AS "Fatec", turno, SUM(vaga) AS "Quantidade" FROM tbcurso WHERE unidade LIKE "%São José dos Campos%" GROUP BY unidade, turno ORDER BY unidade, turno ASC;
+SELECT unidade AS "Fatec", turno, SUM(vaga) AS "Quantidade" FROM tbcurso WHERE unidade LIKE '%São José dos Campos%' GROUP BY unidade, turno ORDER BY unidade, turno ASC;
 
 
 --ex10
